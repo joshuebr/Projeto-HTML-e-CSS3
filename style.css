@@ -1,0 +1,182 @@
+/*{
+    padding: 0;
+    max-width: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+} não funcionou pra mim. */
+
+body{
+    width: 100;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin-left: 450px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.program {
+    display: flex; 
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+
+}
+.phone img {
+    height: 30rem;
+
+}
+
+.login {
+    display: flex; 
+    align-items:flex;
+    justify-content: space-around; 
+    flex-direction: column;
+    margin-left: 250px;
+    width: 50%;
+    height: 2rem;
+
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem;
+    border: 1px solid lightslategray;
+}
+
+.group:nth-child(1) {
+    min-height: 20rem;
+}
+
+.program-logo {
+    height: 3rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid blue;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.profile-photo img {
+    width: 6rem;
+    
+}
+
+.program-login {
+    background-color: green;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.program-logout {
+    background-color: red;
+    color: snow;
+    margin-top: 1rem;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.not-account {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+
+}
+
+.notaccount {
+    
+    color: red
+}
+
+.link-red{
+    color:  red;
+   
+}
+
+.link-greem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+    padding: 8px;   
+    border-radius: 4px;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./gpl.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./aps.png');
+
+/* Setando media queries */
+
+@media (max-width: 1024px) {
+    .program {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .program {
+        width: 90%;
+    }
+    .phone {
+        display: none:
+    }
+
+    .login {
+        width: 100%;
+    }
+}
+    
+}
